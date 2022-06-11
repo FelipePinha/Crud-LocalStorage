@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud - 7DaysOfCode</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="head-title">Adicionar Cliente</h2>
+    </header>
+    <div class="form-container">
+        <form data-action="new">
+            <label for="name">Nome (*obrigatório)</label>
+            <input type="text" name="name" class="form-input" id="name" 
+            placeholder="Digite seu nome" pattern="([aA-zZ]+)" required>
+    
+            <label for="birth-date">Data de Aniversário (*obrigatório)</label>
+            <input type="date" name="birth-date" class="form-input" id="birth-date" required>
+    
+            <button class="button blue" type="submit">Salvar</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de aniversário</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr>
+                    <td>Maria</td>
+                    <td>25-05-1999</td>
+                    <td>
+                        <button class="button green">Editar</button>
+                        <button class="button red">Deletar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose</td>
+                    <td>02-03-1995</td>
+                    <td>
+                        <button class="button green">Editar</button>
+                        <button class="button red">Deletar</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
